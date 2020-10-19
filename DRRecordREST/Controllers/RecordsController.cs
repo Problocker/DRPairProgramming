@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ModelLIb.model;
 
@@ -9,27 +11,25 @@ using ModelLIb.model;
 
 namespace DRRecordREST.Controllers
 {
-    private static readonly List<Records> records = new List<Records>()
-   {
-       new Records("Guld", "Mikkel", 200, "2019", "Danemark"),
-       new Records("Min Lille Mand", "PewDiePie", 459, "1910", "Sverige"),
-       new Records("Store Peter", "Peter", 239, "1981", "Danemark"),
-       new Records("99 Luftballons", "NENA", 253, "2000", "Deutschland"),
-       new Records("I Want It That Way", "BackStreet Boys", 213, "1999", "England")
-
-   };
-
-
-
     [Route("api/[controller]")]
     [ApiController]
     public class RecordsController : ControllerBase
     {
+        private static readonly List<Record> records = new List<Record>()
+        {
+            new Record("Guld", "Mikkel", 200, "2019", "Danemark"),
+            new Record("Min Lille Mand", "PewDiePie", 459, "1910", "Sverige"),
+            new Record("Store Peter", "Peter", 239, "1981", "Danemark"),
+            new Record("99 Luftballons", "NENA", 253, "2000", "Deutschland"),
+            new Record("I Want It That Way", "BackStreet Boys", 213, "1999", "England")
+
+        };
+
         // GET: api/<RecordsController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Record> Get()
         {
-            return new string[] { "value1", "value2" };
+            return records;
         }
 
         // GET api/<RecordsController>/5

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ModelLIb.model
 {
-    public class Records
+    public class Record
     {
         private string _title;
         private string _artist;
@@ -12,11 +12,11 @@ namespace ModelLIb.model
         private string _yearOfPublication;
         private string _countryorigin;
 
-        public Records()
+        public Record()
         {
         }
 
-        public Records(string title, string artist, int duration, string yearOfPublication, string countryorigin)
+        public Record(string title, string artist, int duration, string yearOfPublication, string countryorigin)
         {
             _title = title;
             _artist = artist;
