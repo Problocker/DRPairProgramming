@@ -9,7 +9,15 @@ using ModelLIb.model;
 
 namespace DRRecordREST.Controllers
 {
-   private static  readonly List<>
+    private static readonly List<Records> records = new List<Records>()
+   {
+       new Records("Guld", "Mikkel", 200, "2019", "Danemark"),
+       new Records("Min Lille Mand", "PewDiePie", 459, "1910", "Sverige"),
+       new Records("Store Peter", "Peter", 239, "1981", "Danemark"),
+       new Records("99 Luftballons", "NENA", 253, "2000", "Deutschland"),
+       new Records("I Want It That Way", "BackStreet Boys", 213, "1999", "England")
+
+   };
 
 
 
