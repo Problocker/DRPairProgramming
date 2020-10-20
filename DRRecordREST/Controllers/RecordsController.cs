@@ -30,6 +30,7 @@ namespace DRRecordREST.Controllers
         public IEnumerable<Record> Get()
         {
             return records;
+
         }
 
         // GET api/<RecordsController>/5
