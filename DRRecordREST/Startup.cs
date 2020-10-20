@@ -41,10 +41,8 @@ namespace DRRecordREST
             }
             app.UseSwagger();
             app.UseSwaggerUI(c =>
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Items API v1.0")
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Records API v1.0")
             );
-
-
             app.UseRouting();
 
             app.UseAuthorization();
