@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRRecordREST", "DRRecordREST\DRRecordREST.csproj", "{0A97515F-94FF-46F0-8EDE-3B0028A3C209}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DRRecordREST", "DRRecordREST\DRRecordREST.csproj", "{0A97515F-94FF-46F0-8EDE-3B0028A3C209}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelLIb", "ModelLIb\ModelLIb.csproj", "{165FA4B7-358E-44D1-8CE0-DB9D5467E24A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModelLIb", "ModelLIb\ModelLIb.csproj", "{165FA4B7-358E-44D1-8CE0-DB9D5467E24A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRRecordRESTTests", "DRRecordRESTTests\DRRecordRESTTests.csproj", "{864F27B0-8834-4BAC-ABB9-349313D533F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{165FA4B7-358E-44D1-8CE0-DB9D5467E24A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{165FA4B7-358E-44D1-8CE0-DB9D5467E24A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{165FA4B7-358E-44D1-8CE0-DB9D5467E24A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{864F27B0-8834-4BAC-ABB9-349313D533F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{864F27B0-8834-4BAC-ABB9-349313D533F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{864F27B0-8834-4BAC-ABB9-349313D533F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{864F27B0-8834-4BAC-ABB9-349313D533F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,6 +6,8 @@ namespace ModelLIb.model
 {
     public class Record
     {
+
+        private int _id;
         private string _title;
         private string _artist;
         private int _duration;
@@ -16,8 +18,9 @@ namespace ModelLIb.model
         public Record()
         {
         }
-        public Record(string title, string artist, int duration, string yearOfPublication, string countryOrigin, bool isOnSpotify)
+        public Record(int id, string title, string artist, int duration, string yearOfPublication, string countryOrigin, bool isOnSpotify)
         {
+            _id = id;
             _title = title;
             _artist = artist;
             _duration = duration;
@@ -26,6 +29,11 @@ namespace ModelLIb.model
             _isOnSpotify = isOnSpotify;
         }
 
+        public int Id
+        {
+            get => _id;
+            set => _id = value;
+        }
         public string Title
         {
             get => _title;
