@@ -1,11 +1,11 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DRRecordREST.Controllers;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using DRRecordREST.Controllers;
 using DRRecordREST.StaticList;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace DRRecordREST.Controllers.Tests
+namespace DRRecordRESTTests.Controllers
 {
     [TestClass()]
     public class MusicRecordControllerTests
