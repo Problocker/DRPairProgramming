@@ -10,21 +10,21 @@ namespace ModelLIb.model
         private string _artist;
         private int _duration;
         private string _yearOfPublication;
-        private string _countryorigin;
+        private string _countryOrigin;
+        private bool _isOnSpotify;
 
         public Record()
         {
         }
-
-        public Record(string title, string artist, int duration, string yearOfPublication, string countryorigin)
+        public Record(string title, string artist, int duration, string yearOfPublication, string countryOrigin, bool isOnSpotify)
         {
             _title = title;
             _artist = artist;
             _duration = duration;
             _yearOfPublication = yearOfPublication;
-            _countryorigin = countryorigin;
+            _countryOrigin = countryOrigin;
+            _isOnSpotify = isOnSpotify;
         }
-
 
         public string Title
         {
@@ -50,16 +50,21 @@ namespace ModelLIb.model
             set => _yearOfPublication = value;
         }
 
-        public string Countryorigin
+        public string CountryOrigin
         {
-            get => _countryorigin;
-            set => _countryorigin = value;
+            get => _countryOrigin;
+            set => _countryOrigin = value;
+        }
+
+        public bool IsOnSpotify
+        {
+            get => _isOnSpotify;
+            set => _isOnSpotify = value;
         }
 
         public override string ToString()
         {
-            return $"{nameof(Title)}: {Title}, {nameof(Artist)}: {Artist}, {nameof(Duration)}: {Duration}, {nameof(YearOfPublication)}: {YearOfPublication}, {nameof(Countryorigin)}: {Countryorigin}";
+            return $"{Title} - {Artist}";
         }
     }
-
 }

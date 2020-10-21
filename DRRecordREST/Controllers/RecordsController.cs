@@ -17,11 +17,11 @@ namespace DRRecordREST.Controllers
     {
         private static readonly List<Record> records = new List<Record>()
         {
-            new Record("Guld", "Mikkel", 200, "2019", "Danemark"),
-            new Record("Min Lille Mand", "PewDiePie", 459, "1910", "Sverige"),
-            new Record("Store Peter", "Peter", 239, "1981", "Danemark"),
-            new Record("99 Luftballons", "NENA", 253, "2000", "Deutschland"),
-            new Record("I Want It That Way", "BackStreet Boys", 213, "1999", "England")
+            new Record("Guld", "Mikkel", 200, "2019", "Danmark", true),
+            new Record("Min Lille Mand", "Carl Gustaf Larson", 459, "1910", "Sverigestan", false),
+            new Record("Store Peter Raketbygger", "Peter Madsen", 300, "2017", "Danmark",true),
+            new Record("99 Luftballons", "NENA", 253, "2000", "Deutschland",true),
+            new Record("I Want It That Way", "BackStreet Boys", 213, "1999", "England",true)
 
         };
 
