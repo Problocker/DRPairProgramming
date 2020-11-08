@@ -39,10 +39,6 @@ namespace DRRecordREST.Controllers
 
 
 
-
-
-
-
         // GET api/<RecordsController>/5
         [HttpGet("{id}")]
         public string Get(int id)
